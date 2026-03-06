@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+  --bs-primary: #CC0000;
+  --bs-primary-rgb: 204, 0, 0;
+  --bs-secondary: #2C2C2C;
+  --bs-secondary-rgb: 44, 44, 44;
+  --bs-dark: #1A1A1A;
+  --bs-dark-rgb: 26, 26, 26;
+  --primary-color: #CC0000;
+  /* Deep red signature color */
+  --secondary-color: #1A1A1A;
+  /* Charcoal/Black background */
+  --text-color: #f1f1f1;
+  /* Off-white for dark mode text */
+  --text-dark: #333333;
+  /* For light sections */
+  --bg-color: #1A1A1A;
+  --bg-light: #ffffff;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Custom Footer Link Hover */
+.custom-footer-link {
+  transition: all 0.3s ease;
+  color: #aaa !important;
+}
+
+.custom-footer-link:hover {
+  color: var(--primary-color) !important;
+  padding-left: 5px;
+}
+
+/* Primary buttons override */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 0 !important;
+  /* Amar builders uses sharp edges */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #a00000 !important;
+  border-color: #a00000 !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(204, 0, 0, 0.2);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 0 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+/* text primary override is handled by --bs-primary */
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.text-accent {
+  letter-spacing: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* section padding */
+.section-padding {
+  padding: 100px 0;
+}
+
+.bg-secondary {
+  background-color: #1A1A1A !important;
+}
+
+/* Hero Section specialized CSS */
+.hero-overlay {
+  background: linear-gradient(rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.8));
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  letter-spacing: 8px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Image Hover effects for project cards */
+.project-img-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.project-img-wrapper img {
+  transition: transform 0.7s ease;
+}
+
+.project-card:hover .project-img-wrapper img {
+  transform: scale(1.08);
+}
+
+.project-card {
+  background-color: #222 !important;
+  border-radius: 0 !important;
+  border: 1px solid #333 !important;
+}
+
+.hover-card {
+  background-color: #222 !important;
+  border: 1px solid #333 !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+}
+
+.hover-card h4 {
+  color: #fff !important;
+}
