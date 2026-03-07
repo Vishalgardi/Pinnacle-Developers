@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaBuilding, FaHandshake, FaLeaf } from 'react-icons/fa';
+import Img4989 from '../assets/IMG_4989.PNG';
 
 const Home = () => {
     return (
@@ -89,7 +90,7 @@ const Home = () => {
                         <Col md={6} lg={4}>
                             <Card className="h-100 project-card overflow-hidden">
                                 <div className="project-img-wrapper">
-                                    <Card.Img variant="top" src="/src/assets/IMG_4989.PNG" style={{ height: '350px', objectFit: 'cover', borderRadius: '0' }} />
+                                    <Card.Img variant="top" src={Img4989} style={{ height: '350px', objectFit: 'cover', borderRadius: '0' }} />
                                     <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center bg-dark bg-opacity-75  opacity-0 hover-overlay p-4 text-center" style={{ transition: '0.5s', opacity: 0 }} onMouseEnter={e => e.currentTarget.style.opacity = 1} onMouseLeave={e => e.currentTarget.style.opacity = 0}>
                                         <div>
                                             <h4 className="text-white mb-3" style={{ letterSpacing: '1px' }}>Pinnacle KrushnaKunj</h4>

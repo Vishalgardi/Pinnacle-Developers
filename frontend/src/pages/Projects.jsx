@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Nav, Button, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Img4989 from '../assets/IMG_4989.PNG';
+import Img4987 from '../assets/IMG_4987.PNG';
 
 const Projects = () => {
     const [activeTab, setActiveTab] = useState('all');
@@ -21,8 +23,8 @@ const Projects = () => {
             title: 'Pinnacle KrushnaKunj',
             category: 'residential',
             location: 'Jalochi',
-            img: '/src/assets/IMG_4989.PNG ',
-            gallery: ['/src/assets/IMG_4987.PNG '],
+            img: Img4989,
+            gallery: [Img4987],
             status: 'ON-Going',
             price: 'On Request',
             configuration: '2BHK',

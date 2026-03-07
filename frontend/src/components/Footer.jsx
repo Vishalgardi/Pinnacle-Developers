@@ -53,11 +53,11 @@ const Footer = () => {
                             </li>
                             <li className="mb-3 d-flex align-items-center">
                                 <FaPhoneAlt className="me-3 text-primary" size={16} />
-                                <a href="tel:+912066664444" className="text-decoration-none custom-footer-link">+91 20 6666 4444</a>
+                                <a href="tel:+917264017272" className="text-decoration-none custom-footer-link">+91 7264017272</a>
                             </li>
                             <li className="mb-3 d-flex align-items-center">
                                 <FaEnvelope className="me-3 text-primary" size={16} />
-                                <a href="mailto:info@pinnacledevelopers.com" className="text-decoration-none custom-footer-link">info@pinnacledevelopers.com</a>
+                                <a href="mailto:[EMAIL_ADDRESS]" className="text-decoration-none custom-footer-link">[EMAIL_ADDRESS]</a>
                             </li>
                         </ul>
                     </Col>
